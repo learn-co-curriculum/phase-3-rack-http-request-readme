@@ -1,11 +1,11 @@
-# The HTTP Request
+# HTTP Requests
 
-## Objectives
+## Learning Goals
 
-1. Define the path in an HTTP request
-2. Define the `env` variable in an HTTP request
-3. Use the `path` method to filter HTTP requests
-4. Describe `GET` parameters and how they allow web applications to handle user queries
+- Define the path in an HTTP request
+- Define the `env` variable in an HTTP request
+- Use the `path` method to filter HTTP requests
+- Describe `GET` parameters and how they allow web applications to handle user queries
 
 ## HTTP Requests
 
