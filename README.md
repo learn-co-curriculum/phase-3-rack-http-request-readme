@@ -15,10 +15,21 @@ An HTTP Request that our browser sends to the server contains two main sections 
 
 The path that is requested is the resource that the client wants. Since your server can contain a lot of functionality, the path signifies which specific part of your server it wants. If we were creating a simple shopping cart application, for example, we can think of a few different paths that are required:
 
-|  Path  |        Description       |
-|--------|--------------------------|
-| /items | List all items available |
-| /cart  | List items in cart       |
+<table border="1" cellpadding="4" cellspacing="0">
+  <tr>
+    <th>Path</th>
+    <th>Description</th>
+  </tr>
+  
+  <tr>
+    <td>/items</td>
+    <td>List all items available</td>
+  </tr>
+  <tr>
+    <td>/cart</td>
+    <td>List items in cart</td>
+  </tr>
+</table>
 
 How would we implement this in our Rack app? The path lives in the HTTP request, and to get to it we have to inspect the `env` part of our `#call` function. In the `env` variable is all of the information contained in the request. Thankfully, Rack has a great way of parsing all this information for us. It looks like this:
 
